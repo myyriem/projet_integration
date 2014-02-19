@@ -8,8 +8,8 @@ package Entite;
 
 /**
  *
- * @author Le chiffre
- */
+ * @author    Le chiffre
+ */  
 public class Offre {
     
     private int Id_Offre;

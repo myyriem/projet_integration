@@ -1,7 +1,7 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * and op  en the template in the editor.
  */
 
 package Entite;
@@ -12,7 +12,7 @@ package Entite;
  */
 public class Prestataire {
     
-    
+         
     private int Id_Prestataire;
     private String Nom_Prestataire;
     private String Prenom_Prestataire;

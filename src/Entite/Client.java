@@ -10,7 +10,7 @@ package Entite;
  *
  * @author Le chiffre
  */
-public class Client {
+public class Client { 
     
     private int Id_Client;
     private String Nom_Client;

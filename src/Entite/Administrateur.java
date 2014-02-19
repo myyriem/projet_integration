@@ -12,7 +12,7 @@ package Entite;
  */
 public class Administrateur {
     private int Id_Admin;
-    private String Nom_Admin;
+    private String Nom_Admin; 
     private String Prenom_Admin;
     private String Mail_Admin;
     private int Tel_Admin;
