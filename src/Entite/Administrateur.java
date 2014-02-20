@@ -8,7 +8,7 @@ package Entite;
 
 /**
  *
- * @author Le chiffre
+ * @author Le chiffre JE SUIS M L   SSZDNZFGY
  */
 public class Administrateur {
     private int Id_Admin;
