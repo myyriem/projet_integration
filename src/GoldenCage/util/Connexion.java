@@ -41,7 +41,7 @@ public class Connexion {
 
         return con;
     }
-   public static Connection getInstance(){
+   public static Connection getConnection(){
        if (con==null){
            new Connexion().faireConnection();
        }

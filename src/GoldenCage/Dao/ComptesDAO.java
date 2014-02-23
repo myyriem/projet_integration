@@ -7,72 +7,43 @@
 package GoldenCage.Dao;
 
 import GoldenCage.entites.Comptes;
-import GoldenCage.util.Connexion;
-import java.sql.PreparedStatement;
+import GoldenCage.util.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  *
  * @author FGH
  */
 public class ComptesDAO {
-    
-    
-    public void insertCompte(Comptes c){
 
-        String requete = "insert into comptes (nom,prenom,adresse,email,numTel,Pseudo,motDePasse,typeCompte) values (?,?,?,?,?,?,?,?)";
-        try {
-            PreparedStatement ps = Connexion.getInstance().prepareStatement(requete);
-            ps.setString(1, c.getNom());
-            ps.setString(2, c.getPrenom());
-            ps.setString(3, c.getAdresse());
-            ps.setString(4, c.getEmail());
-            ps.setInt(5, c.getNumTel());
-            ps.setString(6, c.getPseudo());
-            ps.setString(7, c.getMotDePasse());
-            ps.setString(8, c.getTypeCompte());
-            ps.executeUpdate();
-            System.out.println("Ajout effectuée avec succès");
-        } catch (SQLException ex) {
-           //Logger.getLogger(PersonneDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Erreur lors de l'insertion "+ex.getMessage());
-        }
+    public ComptesDAO() {
+    }
+    
+    Crude cr = new Crude();
+
+    public boolean insertCompte(Comptes c){
+        String requete = "insert into comptes (nom,prenom,adresse,email,numTel,Pseudo,motDePasse,typeCompte) values "
+                + "('"+c.getNom()+"','"+c.getPrenom()+"','"+c.getAdresse()+"','"+c.getEmail()+"',"+c.getNumTel()+",'"
+                +c.getPseudo()+"','"+c.getMotDePasse()+"','"+c.getTypeCompte()+"')";
+        return cr.insert(requete);
+                  
     }
 
 
-    public void updateCompte(Comptes c){
-        String requete = "update comptes set nom=?,prenom=?,adresse=?,email=?,numTel=? where idCompte=?";
-        try {
-            PreparedStatement ps = Connexion.getInstance().prepareStatement(requete);
-            ps.setString(1, c.getNom());
-            ps.setString(2, c.getPrenom());
-            ps.setString(3, c.getAdresse());
-            ps.setString(4, c.getEmail());
-            ps.setInt(5, c.getNumTel());
-            ps.setInt(6, c.getIdCompte());
-            ps.executeUpdate();
-            System.out.println("Mise à jour effectuée avec succès");
-        } catch (SQLException ex) {
-           //Logger.getLogger(PersonneDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Erreur lors de la mise à jour "+ex.getMessage());
-        }
+    public boolean updateCompte(Comptes c){
+        String requete = "update comptes set nom='"+c.getNom()+"',prenom='"+c.getPrenom()+"',adresse='"
+                +c.getAdresse()+"',email='"+c.getEmail()+"',numTel="+c.getNumTel()+",pseudo='"
+                +c.getPseudo()+"',motDePass='"+c.getMotDePasse()+"' where idCompte="+c.getIdCompte();
+        return cr.update(requete);
     }
 
-    public void deleteCompte(int id){
-        String requete = "delete from Comptes where idCompte=?";
-        try {
-            PreparedStatement ps = Connexion.getInstance().prepareStatement(requete);
-            ps.setInt(1, id);
-            ps.executeUpdate();
-            System.out.println("Compte supprimée");
-        } catch (SQLException ex) {
-           //Logger.getLogger(PersonneDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Erreur lors de la suppression "+ex.getMessage());
-        }
+    public boolean deleteCompte(int id){
+        String requete = "delete from Comptes where idCompte="+id;
+        return cr.delete(requete);
     }
 
     public List<Comptes> afficherComptes (){
@@ -82,8 +53,7 @@ public class ComptesDAO {
         String requete = "select * from Comptes";
         try {
             
-            Statement statement = Connexion.getInstance().createStatement();
-            ResultSet resultat = statement.executeQuery(requete);
+            ResultSet resultat = cr.list(requete);
 
             while(resultat.next()){
                 Comptes comp =new Comptes();
@@ -98,7 +68,6 @@ public class ComptesDAO {
             }
             return listecomptes;
         } catch (SQLException ex) {
-           //Logger.getLogger(PersonneDao.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("Erreur lors du chargement des comptes "+ex.getMessage());
             return null;
         }
