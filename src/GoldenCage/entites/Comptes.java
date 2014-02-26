@@ -11,7 +11,6 @@ package GoldenCage.entites;
  * @author FGH
  */
 public class Comptes {
-    
     private int idCompte;
     private String nom;
     private String prenom;
@@ -21,8 +20,10 @@ public class Comptes {
     private String typeCompte;
     private String pseudo;
     private String motDePasse;
+    private String urlphoto;
+    private String datenaissance;
 
-    public Comptes(int idCompte, String nom, String prenom, String email, String adresse, int numTel, String typeCompte, String pseudo, String motDePasse) {
+    public Comptes(int idCompte, String nom, String prenom, String email, String adresse, int numTel, String typeCompte, String pseudo, String motDePasse,String datenaissance,String urlphoto) {
         this.idCompte = idCompte;
         this.nom = nom;
         this.prenom = prenom;
@@ -32,6 +33,8 @@ public class Comptes {
         this.typeCompte = typeCompte;
         this.pseudo = pseudo;
         this.motDePasse = motDePasse;
+        this.urlphoto=urlphoto;
+        this.datenaissance=datenaissance;
     }
 
     public Comptes() {
@@ -109,6 +112,24 @@ public class Comptes {
     public void setMotDePasse(String motDePasse) {
         this.motDePasse = motDePasse;
     }
+
+    public String getUrlphoto() {
+        return urlphoto;
+    }
+
+    public void setUrlphoto(String urlphoto) {
+        this.urlphoto = urlphoto;
+    }
+
+    public String getDatenaissance() {
+        return datenaissance;
+    }
+
+    public void setDatenaissance(String datenaissance) {
+        this.datenaissance = datenaissance;
+    }
+
+
     
     
     
