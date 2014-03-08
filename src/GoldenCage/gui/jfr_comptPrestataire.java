@@ -57,6 +57,7 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
         lb_offre16 = new javax.swing.JLabel();
         btn_affiche_offre4 = new javax.swing.JButton();
         btn_supp_offre4 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jp_espace = new javax.swing.JPanel();
         lb_titre_espace = new javax.swing.JLabel();
         jp_service = new javax.swing.JPanel();
@@ -131,7 +132,7 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
             }
         });
         p_bouton.add(bt_mes_offre);
-        bt_mes_offre.setBounds(10, 70, 160, 23);
+        bt_mes_offre.setBounds(10, 150, 160, 23);
 
         bt_espace.setBackground(new java.awt.Color(204, 204, 255));
         bt_espace.setText("Accéder a mon espace");
@@ -181,10 +182,10 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
                 .addComponent(lb_nom_client)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lb_nom_client1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 406, Short.MAX_VALUE)
-                .addGroup(jp_clientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bt_deconnecter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bt_compte_client, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 293, Short.MAX_VALUE)
+                .addComponent(bt_compte_client, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bt_deconnecter)
                 .addContainerGap())
         );
         jp_clientLayout.setVerticalGroup(
@@ -196,9 +197,10 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jp_clientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jp_clientLayout.createSequentialGroup()
-                                .addComponent(bt_compte_client)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bt_deconnecter))
+                                .addGap(29, 29, 29)
+                                .addGroup(jp_clientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(bt_deconnecter)
+                                    .addComponent(bt_compte_client)))
                             .addGroup(jp_clientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(lb_nom_client, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lb_nom_client1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -267,17 +269,23 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
         jp_offLayout.setHorizontalGroup(
             jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_offLayout.createSequentialGroup()
-                .addGap(32, 32, 32)
                 .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lb_offre15)
-                    .addComponent(lb_offre13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btn_supp_offre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_supp_offre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_affiche_offre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_affiche_offre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                    .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lb_offre15)
+                            .addComponent(lb_offre13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn_supp_offre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_supp_offre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_affiche_offre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_affiche_offre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_offLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1)
+                        .addGap(66, 66, 66)))
                 .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jp_offLayout.createSequentialGroup()
                         .addComponent(lb_offre14)
@@ -286,18 +294,19 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
                             .addComponent(btn_supp_offre2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btn_affiche_offre2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jp_offLayout.createSequentialGroup()
-                        .addComponent(lb_offre16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btn_supp_offre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_affiche_offre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jp_offLayout.createSequentialGroup()
+                                .addComponent(lb_offre16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_offLayout.createSequentialGroup()
+                                .addComponent(btn_ajouter_offre)
+                                .addGap(1, 1, 1)))
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_retour)
+                            .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(btn_supp_offre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_affiche_offre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap(28, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_offLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_ajouter_offre)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn_retour)
-                .addGap(66, 66, 66))
         );
         jp_offLayout.setVerticalGroup(
             jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -306,31 +315,40 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
                 .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lb_offre13, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
                         .addComponent(btn_affiche_offre1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btn_supp_offre1))
                     .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
                         .addComponent(btn_affiche_offre2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btn_supp_offre2))
                     .addComponent(lb_offre14))
                 .addGap(18, 18, 18)
                 .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lb_offre15)
                     .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lb_offre16)
+                            .addGroup(jp_offLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(btn_affiche_offre4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_supp_offre4)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                        .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btn_retour)
+                            .addComponent(btn_ajouter_offre)
+                            .addComponent(jLabel1))
+                        .addGap(43, 43, 43))
+                    .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(lb_offre15))
+                    .addGroup(jp_offLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
                         .addComponent(btn_affiche_offre3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_supp_offre3))
-                    .addComponent(lb_offre16)
-                    .addGroup(jp_offLayout.createSequentialGroup()
-                        .addComponent(btn_affiche_offre4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_supp_offre4)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                .addGroup(jp_offLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_ajouter_offre)
-                    .addComponent(btn_retour))
-                .addContainerGap())
+                        .addComponent(btn_supp_offre3))))
         );
 
         javax.swing.GroupLayout jp_offreLayout = new javax.swing.GroupLayout(jp_offre);
@@ -954,6 +972,7 @@ public class jfr_comptPrestataire extends javax.swing.JFrame {
     private javax.swing.JButton btn_supp_offre4;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jp_acceuil;
     private javax.swing.JPanel jp_client;
     private javax.swing.JPanel jp_compteclient;

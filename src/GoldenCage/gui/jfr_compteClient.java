@@ -187,13 +187,13 @@ public class jfr_compteClient extends javax.swing.JFrame {
         jlb_bonjour.setForeground(new java.awt.Color(0, 0, 153));
         jlb_bonjour.setText("Bonjour,");
         jp_client.add(jlb_bonjour);
-        jlb_bonjour.setBounds(100, 10, 71, 40);
+        jlb_bonjour.setBounds(60, 10, 71, 40);
 
         jlb_nomUser.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         jlb_nomUser.setForeground(new java.awt.Color(0, 0, 153));
         jlb_nomUser.setText("Nom d’utilisateur");
         jp_client.add(jlb_nomUser);
-        jlb_nomUser.setBounds(100, 50, 170, 40);
+        jlb_nomUser.setBounds(50, 50, 170, 40);
 
         jlb_idcompte.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jlb_idcompte.setText("2");
@@ -259,7 +259,7 @@ public class jfr_compteClient extends javax.swing.JFrame {
         jp_boutonLayout.setVerticalGroup(
             jp_boutonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jp_boutonLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(49, 49, 49)
                 .addComponent(jb_acceuil)
                 .addGap(18, 18, 18)
                 .addComponent(jb_Services)

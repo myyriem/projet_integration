@@ -98,7 +98,7 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
         getContentPane().add(jlb_cin);
         jlb_cin.setBounds(150, 160, 120, 30);
         getContentPane().add(jtf_cin);
-        jtf_cin.setBounds(290, 160, 240, 30);
+        jtf_cin.setBounds(490, 50, 240, 30);
 
         jlb_nom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_nom.setForeground(new java.awt.Color(0, 51, 153));
@@ -106,7 +106,7 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
         getContentPane().add(jlb_nom);
         jlb_nom.setBounds(150, 200, 120, 30);
         getContentPane().add(jtf_nom);
-        jtf_nom.setBounds(290, 200, 240, 30);
+        jtf_nom.setBounds(20, 50, 240, 30);
 
         jlb_prenom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_prenom.setForeground(new java.awt.Color(0, 51, 153));
@@ -170,14 +170,14 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
         jlb_photo.setToolTipText(""); // NOI18N
         jlb_photo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jlb_photo);
-        jlb_photo.setBounds(600, 160, 130, 130);
+        jlb_photo.setBounds(610, 260, 130, 130);
 
         jlb_client.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_client.setForeground(new java.awt.Color(0, 0, 153));
         jlb_client.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jlb_client.setText("Si vous etes un client taper ici !");
         getContentPane().add(jlb_client);
-        jlb_client.setBounds(250, 160, 240, 50);
+        jlb_client.setBounds(280, 170, 240, 50);
 
         jlb_prest.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_prest.setForeground(new java.awt.Color(0, 0, 153));
@@ -193,7 +193,7 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_client);
-        jb_client.setBounds(300, 220, 150, 50);
+        jb_client.setBounds(540, 90, 150, 50);
 
         jb_prest.setText("Je suis un prestataire");
         jb_prest.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +202,7 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_prest);
-        jb_prest.setBounds(580, 220, 150, 50);
+        jb_prest.setBounds(290, 40, 150, 50);
 
         jb_retour.setText("Retour");
         jb_retour.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +238,7 @@ public class jfr_inscription_1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_conect);
-        jb_conect.setBounds(430, 350, 150, 50);
+        jb_conect.setBounds(550, 460, 150, 50);
 
         jlb_background.setForeground(new java.awt.Color(0, 51, 153));
         jlb_background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/goldencage/images/jfr_insrci_bg.jpg"))); // NOI18N

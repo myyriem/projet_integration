@@ -110,12 +110,12 @@ public class insecrition_client_presat extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         combo_type.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Compt Client", "Compt Prestatair" }));
-        jPanel1.add(combo_type, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 150, -1));
+        jPanel1.add(combo_type, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 150, -1));
 
         lbltype.setFont(new java.awt.Font("Vivaldi", 3, 24)); // NOI18N
         lbltype.setForeground(new java.awt.Color(84, 149, 238));
         lbltype.setText("Type Compte");
-        jPanel1.add(lbltype, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 140, -1));
+        jPanel1.add(lbltype, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 140, -1));
 
         jLabel3.setFont(new java.awt.Font("Wide Latin", 3, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -160,7 +160,7 @@ public class insecrition_client_presat extends javax.swing.JFrame {
                 bt_okActionPerformed(evt);
             }
         });
-        jPanel1.add(bt_ok, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, -1, -1));
+        jPanel1.add(bt_ok, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 430, -1, -1));
         jPanel1.add(pf_pwd, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 300, -1));
 
         jPanel2.setPreferredSize(new java.awt.Dimension(129, 120));

@@ -171,7 +171,7 @@ public class jfr_connexion extends javax.swing.JFrame {
         jlb_goldencage.setForeground(new java.awt.Color(51, 51, 255));
         jlb_goldencage.setText("Golden Cage");
         getContentPane().add(jlb_goldencage);
-        jlb_goldencage.setBounds(70, 80, 320, 57);
+        jlb_goldencage.setBounds(80, 140, 320, 57);
 
         jlb_pwd.setBackground(new java.awt.Color(0, 153, 255));
         jlb_pwd.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
@@ -185,7 +185,7 @@ public class jfr_connexion extends javax.swing.JFrame {
         jlb_login.setForeground(new java.awt.Color(51, 51, 255));
         jlb_login.setText("Nom d’utilisateur");
         getContentPane().add(jlb_login);
-        jlb_login.setBounds(570, 100, 200, 40);
+        jlb_login.setBounds(570, 80, 200, 40);
 
         jtf_login.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jtf_login.setForeground(new java.awt.Color(0, 0, 102));
@@ -195,7 +195,7 @@ public class jfr_connexion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jtf_login);
-        jtf_login.setBounds(580, 140, 180, 30);
+        jtf_login.setBounds(580, 130, 180, 30);
 
         jb_connexion.setBackground(new java.awt.Color(255, 255, 255));
         jb_connexion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -208,7 +208,7 @@ public class jfr_connexion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_connexion);
-        jb_connexion.setBounds(660, 310, 110, 30);
+        jb_connexion.setBounds(630, 310, 110, 30);
 
         jb_inscription.setBackground(new java.awt.Color(255, 255, 255));
         jb_inscription.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -221,7 +221,7 @@ public class jfr_connexion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_inscription);
-        jb_inscription.setBounds(580, 370, 130, 30);
+        jb_inscription.setBounds(550, 370, 130, 30);
 
         jb_quitter.setBackground(new java.awt.Color(255, 255, 255));
         jb_quitter.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -234,7 +234,7 @@ public class jfr_connexion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_quitter);
-        jb_quitter.setBounds(580, 430, 130, 30);
+        jb_quitter.setBounds(550, 430, 130, 30);
 
         jb_fb.setBackground(new java.awt.Color(102, 102, 255));
         jb_fb.setForeground(new java.awt.Color(0, 0, 102));
@@ -246,7 +246,7 @@ public class jfr_connexion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_fb);
-        jb_fb.setBounds(510, 310, 120, 30);
+        jb_fb.setBounds(470, 310, 120, 30);
         getContentPane().add(jtf_mdp);
         jtf_mdp.setBounds(581, 230, 180, 30);
 

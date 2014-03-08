@@ -109,7 +109,7 @@ public class jfr_comptClient extends javax.swing.JFrame {
             }
         });
         p_bouton.add(bt_acceuil);
-        bt_acceuil.setBounds(10, 10, 160, 23);
+        bt_acceuil.setBounds(10, 70, 160, 23);
 
         bt_reclamation.setBackground(new java.awt.Color(204, 204, 255));
         bt_reclamation.setText("Faire une réclamation");
@@ -119,7 +119,7 @@ public class jfr_comptClient extends javax.swing.JFrame {
             }
         });
         p_bouton.add(bt_reclamation);
-        bt_reclamation.setBounds(10, 100, 160, 23);
+        bt_reclamation.setBounds(10, 160, 160, 23);
 
         bt_statistique.setBackground(new java.awt.Color(204, 204, 255));
         bt_statistique.setText("Mes offres réservées");
@@ -129,7 +129,7 @@ public class jfr_comptClient extends javax.swing.JFrame {
             }
         });
         p_bouton.add(bt_statistique);
-        bt_statistique.setBounds(10, 70, 160, 23);
+        bt_statistique.setBounds(10, 130, 160, 23);
 
         bt_offre.setBackground(new java.awt.Color(204, 204, 255));
         bt_offre.setText("Accéder au services");
@@ -139,7 +139,7 @@ public class jfr_comptClient extends javax.swing.JFrame {
             }
         });
         p_bouton.add(bt_offre);
-        bt_offre.setBounds(10, 40, 160, 23);
+        bt_offre.setBounds(10, 100, 160, 23);
 
         jp_client.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -266,11 +266,11 @@ public class jfr_comptClient extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(jp_reclamationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
                     .addComponent(jButton6))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jp_acceuil.add(jp_reclamation);

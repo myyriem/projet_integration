@@ -109,8 +109,6 @@ public class jfr_inscription extends javax.swing.JFrame {
         jb_conect = new javax.swing.JButton();
         jlb_background = new javax.swing.JLabel();
 
-        jfChooser.setFileHidingEnabled(true);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inscription");
         setResizable(false);
@@ -122,7 +120,7 @@ public class jfr_inscription extends javax.swing.JFrame {
         getContentPane().add(jlb_cin);
         jlb_cin.setBounds(140, 210, 120, 30);
         getContentPane().add(jtf_cin);
-        jtf_cin.setBounds(280, 210, 240, 30);
+        jtf_cin.setBounds(370, 220, 240, 30);
 
         jlb_nom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_nom.setForeground(new java.awt.Color(0, 51, 153));
@@ -130,7 +128,7 @@ public class jfr_inscription extends javax.swing.JFrame {
         getContentPane().add(jlb_nom);
         jlb_nom.setBounds(140, 250, 120, 30);
         getContentPane().add(jtf_nom);
-        jtf_nom.setBounds(280, 250, 240, 30);
+        jtf_nom.setBounds(160, 310, 240, 80);
 
         jlb_prenom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_prenom.setForeground(new java.awt.Color(0, 51, 153));
@@ -154,7 +152,7 @@ public class jfr_inscription extends javax.swing.JFrame {
         getContentPane().add(jlb_email);
         jlb_email.setBounds(140, 370, 120, 30);
         getContentPane().add(jtf_email);
-        jtf_email.setBounds(280, 370, 240, 30);
+        jtf_email.setBounds(470, 380, 240, 30);
 
         jlb_numTel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlb_numTel.setForeground(new java.awt.Color(0, 51, 153));
@@ -251,7 +249,7 @@ public class jfr_inscription extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jb_save);
-        jb_save.setBounds(450, 520, 130, 40);
+        jb_save.setBounds(30, 300, 130, 40);
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(50, 142, 920, 10);
 
